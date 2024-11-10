@@ -42,10 +42,10 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
         # Copy the generated `dist` folder to the root of the repository
-        cp -r dist/* .
+        cp -r dist/angular/browser/* .
 
         # Add, commit, and push the updated `dist` folder
-        git add -f dist
+        git add v1.3
         git commit -m "Update dist folder from GitHub Actions"
         git push origin main
       env:
