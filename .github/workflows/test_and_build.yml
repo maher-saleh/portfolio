@@ -35,7 +35,18 @@ jobs:
       # if: success()  # Only run build if tests pass
       run: npm run build
 
-    - name: Deploy (if necessary)
+    - name: Commit and push dist folder
       run: |
-        # Add your deployment steps here
-        echo "Deploying to production..."
+        # Configure Git user
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+        # Copy the generated `dist` folder to the root of the repository
+        cp -r dist/* .
+
+        # Add, commit, and push the updated `dist` folder
+        git add dist
+        git commit -m "Update dist folder from GitHub Actions"
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
