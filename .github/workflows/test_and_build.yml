@@ -40,13 +40,16 @@ jobs:
         # Configure Git user
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+    
+        # Create the v1.3 folder if it doesn't exist
+        mkdir -p v1.3
 
         # Copy the generated `dist` folder to the root of the repository
-        cp -r dist/angular/browser/* .
+        cp -r dist/angular/browser/* v1.3/
 
         # Add, commit, and push the updated `dist` folder
         git add v1.3
-        git commit -m "Update dist folder from GitHub Actions"
+        git commit -m "Update v1.3 folder to be the dist folder"
         git push origin main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
