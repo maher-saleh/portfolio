@@ -49,7 +49,7 @@ jobs:
 
         # Add, commit, and push the updated `dist` folder
         git add v1.3
-        git commit -m "Update v1.3 folder to be the dist folder"
+        git commit -m "deploy to production folder"
         git push origin main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
