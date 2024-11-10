@@ -45,8 +45,8 @@ jobs:
         cp -r dist/* .
 
         # Add, commit, and push the updated `dist` folder
-        git add dist
+        git add -f dist
         git commit -m "Update dist folder from GitHub Actions"
-        git push -f origin main
+        git push origin main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
