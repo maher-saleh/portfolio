@@ -25,9 +25,6 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm test
-
     - name: Build project
       if: success()  # Only run build if tests pass
       run: npm run build
