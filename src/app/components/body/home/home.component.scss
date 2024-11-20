@@ -1,7 +1,132 @@
 div.body {
-    width: calc(100% - 200px);
+    width: calc(100% - 280px);
     height: 100vh;
     left: 200px;
     position: relative;
     text-align: center;
+    align-items: center;
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+}
+
+div.container {
+    display: block;
+    width: 100%;
+    height: 400px;
+    align-items: block;
+    text-align: left;
+    justify-content: start;
+}
+
+#typedTitle {
+    font-family: 'ArialBLK';
+    font-size: calc(1.3em + 1vw);
+    display: initial;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+#typedParagraph_1, #typedParagraph_2 {
+    line-height: 1.3;
+    font-size: calc(0.7em + 1vw);
+    font-weight: normal;
+    letter-spacing: -0.7px;
+    font-family: system-ui;
+}
+
+#technologies_and_frameworks {
+    position: fixed;
+    bottom: 35px;
+    display: none;
+    margin-top: 20px;
+    height: 56px;
+    align-items: center;
+    z-index: 1;
+    padding: 0;
+    font-weight: normal;
+    letter-spacing: -0.7px;
+    font-family: system-ui;
+}
+
+#technologies_label {
+    display: flex;
+    font-size: 24px;
+    font-size: calc(0.7em + 1vw);
+    font-weight: bold;
+    color: #4f4f4f;
+    height: 56px;
+    align-items: center;
+}
+
+#technologies_value {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    font-family: 'ArialBlk';
+    font-size: 40px;
+    font-size: calc(1.3em + 1vw);
+    letter-spacing: -2px;
+    line-height: 1;
+    width: max-content;
+    padding: 5px 0 5px 5px;
+    margin-left: 5px;
+}
+
+.showCursor::after {
+    content: "|";
+    font-family: 'ArialBLK';
+    font-weight: bold;
+    color: rgb(218, 0, 0);
+    margin-left: 2px;
+    animation: blink 0.7s step-end infinite;
+}
+
+.showElement {
+    display: flex !important;
+}
+
+@keyframes blink {
+  50% { color: transparent; }
+}
+
+@media (max-width: 900px) {
+    div.body {
+        align-items: start;
+        padding-top: 40px;
+        height: calc(100vh - 40px);
+    }
+}
+
+@media (max-width: 650px) {
+    div.body {
+        left: 50px;
+        width: calc(100% - 90px);
+        padding: 0 20px;
+        padding-top: 40px;
+    }
+
+    div.body div.container div#typedTitle {
+        font-size: calc(1.3em + 1vw);
+    }
+
+    div.body div.container div#typedParagraph_1,
+    div.body div.container div#typedParagraph_2,
+    div.body div.container div#technologies_and_frameworks div#technologies_label {
+        font-size: calc(0.8em + 1vw);
+    }
+
+    div.body div.container div#technologies_and_frameworks {
+        background-color: #dfdfdf;
+        border: 1px solid #b5b5b5;
+        flex-direction: column;
+        align-items: start;
+        padding: 5px 5px 0 5px;
+    }
+
+    div.body div#technologies_and_frameworks div#technologies_value {
+        font-size: calc(1.3em + 1vw);
+        height: 24px;
+        margin-left: 0;
+    }
 }

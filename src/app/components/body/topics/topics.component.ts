@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { DomSanitizer } from '@angular/platform-browser';
 
 type topic = {
   name: string;
@@ -10,6 +10,8 @@ type topic_item = {
   item: string;
   image: string;
   snippet: string;
+  url: string;
+  images: string[];
 }
 
 @Component({
@@ -21,35 +23,53 @@ type topic_item = {
 })
 export class TopicsComponent implements OnChanges{
 
+  constructor(private sanitizer: DomSanitizer) {}
+
+   getSanitizedUrl(url: string) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+
   
   @Input() topics: topic[]=[];
   @Input() selected_topic = '';
   selected_card: string = '';
+  selected_card_str_length: number = 0;
   is_active: boolean = false;
   selected_topic_content: any = {};
   selected_topic_components: topic_item[] = [];
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('app component selected_topic: ' + this.selected_topic);
+    
+    // Reset active card (if any)
+    this.is_active = false;
+    this.selected_card = '';
+    this.selected_card_str_length = 0;
+
+    // Change selected topic contents
     if(this.selected_topic && this.selected_topic !== 'Home'){
       this.selected_topic_content = this.topics.find(item => item.name == this.selected_topic);
       this.selected_topic_components = this.selected_topic_content.components;
     }
   }
 
-  on_click(event: MouseEvent): void {
+  on_click(event: MouseEvent, component: topic_item): void {
+
     const cards = document.querySelectorAll('.card');
     const card = event.currentTarget as HTMLElement;
-
-    this.selected_card = card.innerText;
-
+    const p = card.querySelector('p.topic_item') as HTMLElement;
+    
     cards.forEach(cardElement => {
-      if(cardElement === card){
-        cardElement.classList.toggle('active');
-      }else{
-        cardElement.classList.remove('active');
-      }
+      cardElement.classList.remove('active');
     });
+
+    if(this.selected_card == p.innerText){
+      this.is_active = false;
+      this.selected_card = '';
+    }else{
+      this.is_active = true;
+      this.selected_card = p.innerText;
+      card.classList.add('active');
+    }
   }
 
   on_mousemove(event: MouseEvent): void{

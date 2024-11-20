@@ -1,5 +1,28 @@
+@font-face {
+    font-family: 'ArialBlk';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/ARIBLK.woff') format('woff');
+}
+
 body {
     margin:0;
     padding: 0;
     background-color: #f1f1f1;
+    font-family: system-ui;
+
+    // background: radial-gradient(circle, orange, #b8b8b8, #b8b8b8, #b8b8b8, #b8b8b8, white, white, white);
+    background: radial-gradient(circle at 5%, orange, #95baff 25%, #d6d6d6 35%, #d6d6d6 60%, white 100%, white 150%);
+    background-size: 300%;
+    background-position: bottom left; /* Start from bottom-left */
+    animation: moveGradient 5s ease-in-out 1 both; /* Move once */
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: bottom left; /* Start position */
+  }
+  100% {
+    background-position: top right; /* End position */
+  }
 }

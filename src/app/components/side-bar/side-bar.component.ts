@@ -1,4 +1,3 @@
-// import { CommonModule } from '@angular/common';
 import { NgFor } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -20,12 +19,10 @@ export class SideBarComponent {
     return this.sanitizer.bypassSecurityTrustHtml(icon);
   }
 
-  constructor(private sanitizer: DomSanitizer) {
+  constructor(private sanitizer: DomSanitizer) {}
 
-  }
-
-  sendData() {
-    this.selectedTopicChange.emit(this.selected_topic);
+  sendData(topic: string) {
+    this.selectedTopicChange.emit(topic);
   }
 
   categories = [
@@ -43,25 +40,36 @@ export class SideBarComponent {
     // Prevent default behavior
     event.preventDefault();
     
-    // Get links
-    const links = document.querySelectorAll(".side-panel li");
-
-    // Remove "active" class from all links
-    links.forEach(l => l.classList.remove("active"));
-
-    // Add "active" class to the clicked link
     const parentLi = event.target.closest('li');
-    if (parentLi) {
-      parentLi.classList.add("active");
+    const childA = parentLi.querySelector('a');
+    if(this.selected_topic == childA.innerHTML){
+      return;
     }
 
-    // Set selected_topic value
-    
-    const childA = parentLi.querySelector('a');
-    this.selected_topic = childA.innerHTML == 'Home' ? '' : childA.innerHTML;
+    // force animation
+    if(this.selected_topic){
+      this.sendData('Empty');
+    }
 
-    // Notify parent component with selected_topic change
-    this.sendData();
+
+    setTimeout(() => {
+      // Get links
+      const links = document.querySelectorAll(".side-panel li");
+
+      // Add "active" class to the clicked link
+
+      // Remove "active" class from all links
+      links.forEach(l => l.classList.remove("active"));
+      if (parentLi) {
+        parentLi.classList.add("active");
+      }
+
+      // Set selected_topic value
+      this.selected_topic = childA.innerHTML; // == 'Home' ? '' : childA.innerHTML;
+
+      // Notify parent component with selected_topic change
+      this.sendData(this.selected_topic);
+    }, 0);
   }
 }
 

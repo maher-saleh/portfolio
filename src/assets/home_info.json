@@ -1,0 +1,14 @@
+{
+    "header" : "<b style='color:#797979'>Hello, </b><b style='color:#4f4f4f'>I'm Maher Saleh</b><br><b style='color:#26368f'>A Full-Stack Developer</b>",
+    "first_paragaraph" : "<br><b style='color:#4f4f4f'>I build engaging and robust web applications, merging functionality with aesthetics to create seamless user experiences. With expertise in both frontend and backend development, I transform complex ideas into efficient, scalable solutions. My focus is on delivering clean, responsive, and well-documented code that stands the test of time.</b>",
+    "second_paragaraph" : "<br><b style='color:#4f4f4f;background-color:#dad2ff;'>Take a look at my projects, and feel free to reach out—whether you're looking for a developer, a collaborator, or just some inspiration for your next idea.</b>",
+    "technologies_label": "Technologies &amp; Tools: ",
+    "technologies_value":   [
+                                "Angular",
+                                "Vue",
+                                "Nuxt",
+                                "React",
+                                "MongoDB",
+                                "Firebase"
+                            ]
+}

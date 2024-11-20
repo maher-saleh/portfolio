@@ -1,11 +1,23 @@
 <div class="body">
-    @for (topic of selected_topic_components; track $index) {
-        <div class="card" (click)="on_click($event)" (mousemove)="on_mousemove($event)" (mouseleave)="resetPosition($event)">
-            <img src="{{ topic.image }}" alt="{{ topic.item }}">
-            <p>{{ topic.item }}</p>
-            @if ( topic.item === selected_card ){
-                <p class="snippet_container" [innerHTML]="topic.snippet"></p>
-            }
-        </div>
-    }
+    <div class="container">
+        @for (component of selected_topic_components; track $index) {
+            <!-- @if(!is_active || (is_active && component.item === selected_card)){ -->
+                <div class="card" [class]="{'hideCard':is_active && component.item != selected_card}" (click)="on_click($event, component)" (mousemove)="on_mousemove($event)" (mouseleave)="resetPosition($event)">
+                    <img class="logo" src="{{ component.image }}" alt="{{ component.item }}">
+                    <p class="topic_item">{{ component.item }}</p>
+                    @if ( component.item === selected_card && is_active){
+                        @if ( component.snippet ){
+                            <p class="snippet_container" [innerHTML]="component.snippet"></p>
+                        }
+                        @if ( component.url ){
+                            <iframe title="topic.item" [src]="getSanitizedUrl(component.url)" frameborder="0"></iframe>
+                        }
+                        @if ( component.images.length ){
+                            <img class="image" title="topic.item" [src]="component.images[0]" />
+                        }
+                    }
+                </div>
+            <!-- } -->
+        }
+    </div>
 </div>

@@ -23,7 +23,6 @@ body {
     background-color: #333;
     padding-top: 20px;
     z-index: 1;
-    transform: translateX(0);
     transition: .3s ease;
 }
 
@@ -52,6 +51,14 @@ body {
     cursor: pointer;    
     display: flex;
     justify-content: right;
+    transition: .2s ease-in-out;
+    height: 40px;
+    margin: 0;
+    align-items: center;
+}
+
+.side-panel li:hover {
+    background-color: #454343;
 }
 
 .side-panel li:first-child {
@@ -64,18 +71,11 @@ body {
     display: inline-block;
     padding-bottom: 3px;
     position: relative;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
-.side-panel a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: cyan;
-    transition: width 0.3s ease-in-out;
+.side-panel li.active {
+    background-color: #454343;
 }
 
 .side-panel li:hover svg path,
@@ -85,20 +85,12 @@ body {
     fill: cyan;
 }
 
-.side-panel li:hover a, .side-panel li.active a {
+.side-panel li:hover a, .side-panel li.active a {    
     color: cyan;
 }
 
 .side-panel li.active a {
     text-shadow: 3px 5px 8px cyan, -3px -5px 8px cyan;
-}
-
-.side-panel li:hover a::after, .side-panel li.active a::after {
-    width: 100%;
-}
-
-.side-panel li.active a::after {
-    box-shadow: 3px 5px 8px cyan, -3px -5px 8px cyan;
 }
 
 .side-panel svg {
@@ -126,7 +118,6 @@ body {
 
     
     .side-panel{
-        position: absolute;
         transform: translateX(calc(-100% - -50px)) !important;
     }
     
