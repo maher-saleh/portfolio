@@ -12,6 +12,7 @@
         <li *ngFor="let topic of topics" (click)="side_bar_item_click($event)">
             @if (topic.name != 'Empty') {
                 <div class="topic" [innerHTML]="getSanitizedIcon(topic.icon)"></div>
+                <img [src]="topic.icon" alt="">
                 <a data-content="topic.name">{{ topic.name }}</a>
             }
         </li>
