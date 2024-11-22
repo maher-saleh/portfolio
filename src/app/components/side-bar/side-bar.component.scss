@@ -13,7 +13,15 @@ body {
     font-size: 1rem;
 }
 
-/* Fixed Side Panel */
+.side-panel .icon-container {
+    position: relative;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    background-color: #cccccc;
+    margin-right: 7px;
+}
+
 .side-panel {
     position: fixed;
     top: 0;
@@ -68,21 +76,22 @@ body {
 .side-panel a {
     color: #fff;
     text-decoration: none;
-    display: inline-block;
-    padding-bottom: 3px;
     position: relative;
     transition: all 0.2s;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
 }
 
 .side-panel li.active {
     background-color: #454343;
 }
 
-.side-panel li:hover svg path,
-::ng-deep .side-panel li:hover svg path,
-.side-panel li.active svg path,
-::ng-deep .side-panel li.active svg path {
-    fill: cyan;
+.side-panel li:hover .icon-container, .side-panel li.active .icon-container {
+    background-color: cyan;
+    box-shadow: 1px 1px 4px cyan;
+    filter: drop-shadow(2px 4px 6px rgba(5, 201, 201, 0.5));
 }
 
 .side-panel li:hover a, .side-panel li.active a {    
@@ -93,20 +102,6 @@ body {
     text-shadow: 3px 5px 8px cyan, -3px -5px 8px cyan;
 }
 
-.side-panel svg {
-    position: relative;
-    display: inline-block;
-    right: 10px;
-    
-    path {
-        fill: white;
-    }
-}
-
-.side-panel svg:not(:first-child) {
-    top: 4px;
-}
-
 /* Main Content */
 .content {
     margin-left: 220px; /* Space to the right of the side panel */
@@ -115,8 +110,7 @@ body {
 
 /* Hide menu by default on smaller screens */
 @media (max-width: 650px) {
-
-    
+   
     .side-panel{
         transform: translateX(calc(-100% - -50px)) !important;
     }
@@ -126,7 +120,7 @@ body {
     }
 
     .side-panel li, .side-panel .home {
-        padding-right: 4px;
+        padding-right: 8px;
     }
 
     .side-panel a {

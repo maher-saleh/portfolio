@@ -1,11 +1,10 @@
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf, NgStyle } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-side-bar',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NgIf, NgStyle],
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.scss'
 })
@@ -14,12 +13,6 @@ export class SideBarComponent {
   @Output() selectedTopicChange = new EventEmitter<string>();
   
   selected_topic='';
-
-   getSanitizedIcon(icon: string) {
-    return this.sanitizer.bypassSecurityTrustHtml(icon);
-  }
-
-  constructor(private sanitizer: DomSanitizer) {}
 
   sendData(topic: string) {
     this.selectedTopicChange.emit(topic);
@@ -30,7 +23,7 @@ export class SideBarComponent {
     'Backend',
     'Database',
     'DevOps',
-    'Mobile App'
+    'Mobile'
   ]
   
   
@@ -47,9 +40,9 @@ export class SideBarComponent {
     }
 
     // force animation
-    if(this.selected_topic){
-      this.sendData('Empty');
-    }
+    // if(this.selected_topic){
+    //   this.sendData('Empty');
+    // }
 
 
     setTimeout(() => {

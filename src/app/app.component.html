@@ -1,10 +1,11 @@
 <app-side-bar [topics]="topics" (selectedTopicChange)="selected_topic_change($event)" />
 
-@if(selected_topic == 'Home'){
-  <app-home @fadeInOut/>
-}@else {
-  <app-topics [topics]="topics" [selected_topic]="selected_topic" @fadeInOut/>
-}
+<div>
+  @if(topics_visible){
+    <app-topics [topics]="topics" [selected_topic]="selected_topic" [@fadeTopics]="selected_topic != 'Home'"/>
+  }@else {
+    <app-home [@fadeTopics]="selected_topic == 'Home'"/>
+  }
+</div>
 
 <app-footer/>
-<!-- <router-outlet /> -->

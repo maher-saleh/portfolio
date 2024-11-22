@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { trigger, state, style, transition, animate, group } from '@angular/animations';
 
 type topic = {
   name: string;
@@ -39,11 +40,15 @@ export class TopicsComponent implements OnChanges{
   selected_topic_components: topic_item[] = [];
 
   ngOnChanges(changes: SimpleChanges): void {
-    
     // Reset active card (if any)
     this.is_active = false;
     this.selected_card = '';
     this.selected_card_str_length = 0;
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(cardElement => {
+      cardElement.classList.remove('active');
+    });
 
     // Change selected topic contents
     if(this.selected_topic && this.selected_topic !== 'Home'){

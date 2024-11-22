@@ -121,6 +121,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
                         backDelay: 2500,
                         loop: true,
                         loopCount: Infinity,
+                        shuffle: true,
                         strings: Object.values(this.info.technologies_value),
                         preStringTyped: (arrayPos, self) => {
                           const num = this.pickRandomColor();

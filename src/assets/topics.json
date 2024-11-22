@@ -5,7 +5,7 @@
     "components": []
   },
   {
-    "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='20' width='22' viewBox='0 0 640 512'><path fill='white' d='M64 96c0-35.3 28.7-64 64-64l384 0c35.3 0 64 28.7 64 64l0 256-64 0 0-256L128 96l0 256-64 0L64 96zM0 403.2C0 392.6 8.6 384 19.2 384l601.6 0c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8L76.8 480C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z'/></svg>",
+    "icon": "./logos/Frontend/frontend.png",
     "name": "Frontend",
     "components": [
       {
@@ -46,7 +46,7 @@
     ]
   },
   {
-    "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='20' width='22' viewBox='0 0 512 512'><path fill='white' d='M64 32C28.7 32 0 60.7 0 96l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 32zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 288zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z'/></svg>",
+    "icon": "./logos/Backend/backend.png",
     "name": "Backend",
     "components": [
       {
@@ -108,54 +108,54 @@
     ]
   },
   {
-    "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='20' width='22' viewBox='0 0 448 512'><path fill='white' d='M448 80l0 48c0 44.2-100.3 80-224 80S0 172.2 0 128L0 80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6L448 288c0 44.2-100.3 80-224 80S0 332.2 0 288L0 186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6l0 85.9c0 44.2-100.3 80-224 80S0 476.2 0 432l0-85.9z'/></svg>",
-    "name": "Databases",
+    "icon": "./logos/Database/database.png",
+    "name": "Database",
     "components": [
       {
         "item": "MySQL",
-        "image": "./logos/Databases/mysql.png",
+        "image": "./logos/Database/mysql.png",
         "snippet": "<p>I possess deep expertise in MySQL, expertly managing relational databases to ensure data integrity, high availability, and scalability. With advanced knowledge of complex queries, indexing, and optimization techniques, I design efficient database structures that support high-performance applications.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "PostgreSQL",
-        "image": "./logos/Databases/postgres.png",
+        "image": "./logos/Database/postgres.png",
         "snippet": "<p>As an experienced PostgreSQL developer, I leverage its robust features like ACID compliance, complex joins, and custom functions to build scalable and reliable database systems. I optimize performance through indexing, query tuning, and efficient data models, ensuring seamless and secure data management for enterprise applications.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "MongoDB",
-        "image": "./logos/Databases/mongodb.png",
+        "image": "./logos/Database/mongodb.png",
         "snippet": "<p>With extensive experience in MongoDB, I design and implement scalable NoSQL database solutions that handle large volumes of unstructured data. I expertly utilize MongoDB's flexible schema and powerful aggregation framework to build fast, high-performing applications with dynamic and efficient data storage.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "MariaDB",
-        "image": "./logos/Databases/mariadb.png",
+        "image": "./logos/Database/mariadb.png",
         "snippet": "<p>Having worked extensively with MariaDB, I utilize its high-performance capabilities to build highly available, secure, and scalable databases. I focus on optimizing queries, ensuring proper indexing, and configuring replication to support critical, large-scale applications while maintaining data consistency and performance.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "Cassandra",
-        "image": "./logos/Databases/cassandra.png",
+        "image": "./logos/Database/cassandra.png",
         "snippet": "<p>My proficiency in Cassandra enables me to design highly scalable, fault-tolerant distributed databases for handling massive datasets across multiple nodes. I implement effective data models and ensure optimal configuration for performance, durability, and availability, making Cassandra an ideal solution for big data applications.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "Redis",
-        "image": "./logos/Databases/redis.png",
+        "image": "./logos/Database/redis.png",
         "snippet": "<p>I utilize Redis as a powerful database solution, taking full advantage of its in-memory capabilities to deliver lightning-fast data access. With expertise in setting up Redis for both persistence and transient data storage, I ensure seamless performance for real-time applications that require low-latency and high-throughput data operations.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "Firebase",
-        "image": "./logos/Databases/firebase.png",
+        "image": "./logos/Database/firebase.png",
         "snippet": "<p>With expertise in Firebase, I integrate real-time databases, authentication, and cloud functions to build dynamic, scalable applications. I leverage Firebase's seamless sync capabilities and powerful backend services to create responsive mobile and web applications that scale effortlessly and deliver an exceptional user experience.</p>",
         "url": null,
         "images": []
@@ -260,7 +260,7 @@
     ]
   },
   {
-    "icon": "",
+    "icon": "./logos/Mobile/mobile.png",
     "name": "Mobile App",
     "components": [
       {
