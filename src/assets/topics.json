@@ -11,7 +11,7 @@
       {
         "item": "Angular",
         "image": "./logos/Frontend/angular.png",
-        "snippet": "<p>I've worked extensively with Angular to build dynamic, responsive web applications that prioritize performance and user experience. My expertise spans from developing small-scale applications to architecting complex, enterprise-level systems, utilizing Angular's powerful tools and best practices for high-quality front-end development.</p><b>Notable Angular Projects: </b><p>such as this portfolio developed using Angular v18, showcase the versatility and power of the framework in creating modern and dynamic web applications.</p>",
+        "snippet": "<p>I've worked extensively with Angular to build dynamic, responsive web applications that prioritize performance and user experience. My expertise spans from developing small-scale applications to architecting complex, enterprise-level systems, utilizing Angular's powerful tools and best practices for high-quality front-end development.</p><b>Notable Angular Projects: </b><p>Such as this portfolio, developed using Angular v18, which showcases the versatility and power of the framework in creating modern and dynamic web applications. The project is hosted on GitHub and leverages GitHub Actions to automate testing and build processes, ensuring code quality and generating the final production-ready assets.</p>",
         "url": null,
         "images": []
       },
