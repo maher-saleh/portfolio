@@ -51,7 +51,7 @@ export class TopicsComponent implements OnChanges{
     });
 
     // Change selected topic contents
-    if(this.selected_topic && this.selected_topic !== 'Home'){
+    if(this.selected_topic && this.selected_topic !== 'Home' && this.selected_topic !== 'About Me'){
       this.selected_topic_content = this.topics.find(item => item.name == this.selected_topic);
       this.selected_topic_components = this.selected_topic_content.components;
     }

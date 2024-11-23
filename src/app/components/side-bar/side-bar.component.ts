@@ -39,12 +39,6 @@ export class SideBarComponent {
       return;
     }
 
-    // force animation
-    // if(this.selected_topic){
-    //   this.sendData('Empty');
-    // }
-
-
     setTimeout(() => {
       // Get links
       const links = document.querySelectorAll(".side-panel li");
@@ -58,7 +52,7 @@ export class SideBarComponent {
       }
 
       // Set selected_topic value
-      this.selected_topic = childA.innerHTML; // == 'Home' ? '' : childA.innerHTML;
+      this.selected_topic = childA.innerHTML;
 
       // Notify parent component with selected_topic change
       this.sendData(this.selected_topic);

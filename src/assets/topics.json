@@ -261,7 +261,7 @@
   },
   {
     "icon": "./logos/Mobile/mobile.png",
-    "name": "Mobile App",
+    "name": "Mobile",
     "components": [
       {
         "item": "Flutter",

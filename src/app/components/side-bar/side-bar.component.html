@@ -1,27 +1,42 @@
 
 <div class="side-panel">
     <ul>
-        <li (click)="side_bar_item_click($event)" class="active">
+        <div class="home-div">
+        <li class="li-home" (click)="side_bar_item_click($event)" class="active">
             <div class="icon-container" [ngStyle]="{
                 '-webkit-mask': 'url(./logos/Home/home.png) no-repeat center / contain',
                 'mask': 'url(./logos/Home/home.png) no-repeat center / contain',
                 }">
             </div>
-            <a data-content="topic.name">Home</a>
+            <a>Home</a>
         </li>
+        </div>
         
-        <ng-container *ngFor="let topic of topics">
-            <li *ngIf="topic.name !== 'Empty'" (click)="side_bar_item_click($event)">
-                @if (topic.name != 'Empty') {
-                    <div class="icon-container"
-                        [ngStyle]="{
-                            '-webkit-mask': 'url(' + topic.icon + ') no-repeat center / contain',
-                            'mask': 'url(' + topic.icon + ') no-repeat center / contain',
+        <div class="topics-div">
+            <ng-container *ngFor="let topic of topics">
+                <li class="li-topic" *ngIf="topic.name !== 'Empty'" (click)="side_bar_item_click($event)">
+                    @if (topic.name != 'Empty') {
+                        <div class="icon-container"
+                            [ngStyle]="{
+                                '-webkit-mask': 'url(' + topic.icon + ') no-repeat center / contain',
+                                'mask': 'url(' + topic.icon + ') no-repeat center / contain',
+                                }">
+                        </div>
+                        <a data-content="topic.name">{{ topic.name }}</a>
+                    }
+                </li>
+            </ng-container>
+        </div>
+        
+        <div class="about-div">
+            <li class="li-about" (click)="side_bar_item_click($event)">
+                <div class="icon-container" [ngStyle]="{
+                            '-webkit-mask': 'url(./logos/About/about.png) no-repeat center / contain',
+                            'mask': 'url(./logos/About/about.png) no-repeat center / contain',
                             }">
-                    </div>
-                    <a data-content="topic.name">{{ topic.name }}</a>
-                }
+                </div>
+                <a>About Me</a>
             </li>
-        </ng-container>
+        </div>
     </ul>
 </div>

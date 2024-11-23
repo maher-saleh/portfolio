@@ -1,0 +1,64 @@
+div.body {
+    width: calc(100% - 280px);
+    height: 100vh;
+    left: 200px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+}
+
+div.container {
+    display: block;
+    width: 100%;
+    height: max-content;
+    align-items: block;
+    text-align: left;
+    justify-content: start;
+}
+
+div.body * {
+    font-family: 'ArialBLK';
+    font-size: 24px;
+}
+
+div.body span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.body a {
+    margin-left: 10px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+div.body div:not(.container) {
+    margin-bottom: 30px;
+}
+
+div.body div {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+@media (max-width: 900px) {
+    div.body * {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    
+    div.body {
+        left: 50px;
+        width: calc(100% - 90px);
+        padding: 0 20px;
+        padding-top: 40px;
+    }
+
+    div.body * {
+        font-size: 14px;
+    }
+}

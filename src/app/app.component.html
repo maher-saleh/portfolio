@@ -2,9 +2,13 @@
 
 <div>
   @if(topics_visible){
-    <app-topics [topics]="topics" [selected_topic]="selected_topic" [@fadeTopics]="selected_topic != 'Home'"/>
+    <app-topics [topics]="topics" [selected_topic]="selected_topic" [@fadeTopics]="selected_topic != 'Home' && selected_topic != 'About Me'"/>
   }@else {
-    <app-home [@fadeTopics]="selected_topic == 'Home'"/>
+    @if(selected_topic == 'Home'){
+      <app-home [@fadeTopics]="selected_topic == 'Home'"/>
+    }@else if (selected_topic == 'About Me') {
+      <app-about [@fadeTopics]="selected_topic == 'About Me'"/>
+    }
   }
 </div>
 

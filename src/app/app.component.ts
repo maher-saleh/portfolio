@@ -5,6 +5,7 @@ import { HomeComponent } from './components/body/home/home.component';
 import { trigger, state, style, transition, animate, group } from '@angular/animations';
 import topics_json from '../assets/topics.json';
 import { FooterComponent } from "./components/footer/footer.component";
+import { AboutComponent } from "./components/body/about/about.component";
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ import { FooterComponent } from "./components/footer/footer.component";
     SideBarComponent,
     TopicsComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -49,7 +51,7 @@ export class AppComponent {
     this.selected_topic = value;
     
     setTimeout(()=>{
-      if(this.selected_topic != 'Home'){
+      if(this.selected_topic != 'Home' && this.selected_topic != 'About Me'){
         this.topics_visible = true;
       };
     }, 0);
