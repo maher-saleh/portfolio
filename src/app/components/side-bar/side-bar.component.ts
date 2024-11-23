@@ -58,5 +58,9 @@ export class SideBarComponent {
       this.sendData(this.selected_topic);
     }, 0);
   }
+
+  encodeURI(value: string): string {
+    return encodeURI(value);
+  }
 }
 

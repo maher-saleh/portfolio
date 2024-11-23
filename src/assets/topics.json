@@ -108,54 +108,54 @@
     ]
   },
   {
-    "icon": "./logos/Database/database.png",
-    "name": "Database",
+    "icon": "./logos/databases/database.png",
+    "name": "Databases",
     "components": [
       {
         "item": "MySQL",
-        "image": "./logos/Database/mysql.png",
+        "image": "./logos/databases/mysql.png",
         "snippet": "<p>I possess deep expertise in MySQL, expertly managing relational databases to ensure data integrity, high availability, and scalability. With advanced knowledge of complex queries, indexing, and optimization techniques, I design efficient database structures that support high-performance applications.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "PostgreSQL",
-        "image": "./logos/Database/postgres.png",
+        "image": "./logos/databases/postgres.png",
         "snippet": "<p>As an experienced PostgreSQL developer, I leverage its robust features like ACID compliance, complex joins, and custom functions to build scalable and reliable database systems. I optimize performance through indexing, query tuning, and efficient data models, ensuring seamless and secure data management for enterprise applications.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "MongoDB",
-        "image": "./logos/Database/mongodb.png",
+        "image": "./logos/databases/mongodb.png",
         "snippet": "<p>With extensive experience in MongoDB, I design and implement scalable NoSQL database solutions that handle large volumes of unstructured data. I expertly utilize MongoDB's flexible schema and powerful aggregation framework to build fast, high-performing applications with dynamic and efficient data storage.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "MariaDB",
-        "image": "./logos/Database/mariadb.png",
+        "image": "./logos/databases/mariadb.png",
         "snippet": "<p>Having worked extensively with MariaDB, I utilize its high-performance capabilities to build highly available, secure, and scalable databases. I focus on optimizing queries, ensuring proper indexing, and configuring replication to support critical, large-scale applications while maintaining data consistency and performance.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "Cassandra",
-        "image": "./logos/Database/cassandra.png",
+        "image": "./logos/databases/cassandra.png",
         "snippet": "<p>My proficiency in Cassandra enables me to design highly scalable, fault-tolerant distributed databases for handling massive datasets across multiple nodes. I implement effective data models and ensure optimal configuration for performance, durability, and availability, making Cassandra an ideal solution for big data applications.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "Redis",
-        "image": "./logos/Database/redis.png",
+        "image": "./logos/databases/redis.png",
         "snippet": "<p>I utilize Redis as a powerful database solution, taking full advantage of its in-memory capabilities to deliver lightning-fast data access. With expertise in setting up Redis for both persistence and transient data storage, I ensure seamless performance for real-time applications that require low-latency and high-throughput data operations.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "Firebase",
-        "image": "./logos/Database/firebase.png",
+        "image": "./logos/databases/firebase.png",
         "snippet": "<p>With expertise in Firebase, I integrate real-time databases, authentication, and cloud functions to build dynamic, scalable applications. I leverage Firebase's seamless sync capabilities and powerful backend services to create responsive mobile and web applications that scale effortlessly and deliver an exceptional user experience.</p>",
         "url": null,
         "images": []
@@ -260,13 +260,27 @@
     ]
   },
   {
-    "icon": "./logos/Mobile/mobile.png",
-    "name": "Mobile",
+    "icon": "./logos/Cross Platforms/cross_platforms.png",
+    "name": "Cross Platforms",
     "components": [
       {
         "item": "Flutter",
-        "image": "./logos/Mobile/flutter.png",
+        "image": "./logos/Cross Platforms/flutter.png",
         "snippet": "<p>I have a strong background in using Flutter to build high-performance, cross-platform mobile and web applications that deliver seamless user experiences. From creating user-friendly mobile apps to developing feature-rich, scalable solutions, my expertise in Flutter empowers me to utilize its rich widget library and efficient rendering engine to build visually appealing and responsive interfaces across multiple platforms with a single codebase.</p><b>Notable Flutter Projects:</b><p>These include a variety of applications designed for both iOS and Android, demonstrating Flutter's capabilities in delivering native-like performance and robust functionality.</p><small><i>Examples and screenshots of these projects will be uploaded shortly.</i></small>",
+        "url": null,
+        "images": []
+      },
+      {
+        "item": "React native",
+        "image": "./logos/Cross Platforms/react_native.png",
+        "snippet": "<p>I have extensive experience leveraging React Native to develop high-performance, cross-platform mobile applications that deliver native-like experiences on both iOS and Android. My expertise in React Native allows me to create robust, scalable solutions that seamlessly blend performance and functionality. By utilizing its powerful component-based architecture and rich ecosystem, I craft responsive and user-friendly interfaces, ensuring smooth navigation and efficient state management. My proficiency in React Native enables me to integrate advanced native modules and third-party libraries, ensuring versatile and customized solutions that meet diverse business requirements.</p><b>Notable Flutter Projects:</b><p>These include feature-rich mobile applications that showcase React Native's ability to deliver consistent performance and outstanding user experiences across multiple platforms.</p><small><i>Examples and screenshots of these projects will be uploaded shortly.</i></small>",
+        "url": null,
+        "images": []
+      },
+      {
+        "item": "Electron.js",
+        "image": "./logos/Cross Platforms/electron.png",
+        "snippet": "<p>I possess a deep understanding of Electron.js for building cross-platform desktop applications using familiar web technologies such as HTML, CSS, and JavaScript. My experience with Electron enables me to create high-performance, desktop-grade solutions that are both scalable and maintainable. Leveraging Electron's robust framework, I develop feature-rich applications that combine the power of Node.js on the backend with seamless frontend interfaces. My skills extend to optimizing memory usage, managing security protocols, and ensuring native integration with operating systems, resulting in reliable and efficient desktop applications.</p><b>Notable Flutter Projects:</b><p>These include versatile desktop applications that highlight Electron's capability to deliver native-like performance while utilizing a single codebase across Windows, macOS, and Linux platforms.</p><small><i>Examples and screenshots of these projects will be uploaded shortly.</i></small>",
         "url": null,
         "images": []
       }

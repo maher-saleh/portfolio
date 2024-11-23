@@ -18,8 +18,8 @@
                     @if (topic.name != 'Empty') {
                         <div class="icon-container"
                             [ngStyle]="{
-                                '-webkit-mask': 'url(' + topic.icon + ') no-repeat center / contain',
-                                'mask': 'url(' + topic.icon + ') no-repeat center / contain',
+                                '-webkit-mask': 'url(' + encodeURI(topic.icon) + ') no-repeat center / contain',
+                                'mask': 'url(' + encodeURI(topic.icon) + ') no-repeat center / contain',
                                 }">
                         </div>
                         <a data-content="topic.name">{{ topic.name }}</a>
