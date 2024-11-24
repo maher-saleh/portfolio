@@ -108,54 +108,54 @@
     ]
   },
   {
-    "icon": "./logos/databases/database.png",
+    "icon": "./logos/Databases/databases.png",
     "name": "Databases",
     "components": [
       {
         "item": "MySQL",
-        "image": "./logos/databases/mysql.png",
+        "image": "./logos/Databases/mysql.png",
         "snippet": "<p>I possess deep expertise in MySQL, expertly managing relational databases to ensure data integrity, high availability, and scalability. With advanced knowledge of complex queries, indexing, and optimization techniques, I design efficient database structures that support high-performance applications.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "PostgreSQL",
-        "image": "./logos/databases/postgres.png",
+        "image": "./logos/Databases/postgres.png",
         "snippet": "<p>As an experienced PostgreSQL developer, I leverage its robust features like ACID compliance, complex joins, and custom functions to build scalable and reliable database systems. I optimize performance through indexing, query tuning, and efficient data models, ensuring seamless and secure data management for enterprise applications.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "MongoDB",
-        "image": "./logos/databases/mongodb.png",
+        "image": "./logos/Databases/mongodb.png",
         "snippet": "<p>With extensive experience in MongoDB, I design and implement scalable NoSQL database solutions that handle large volumes of unstructured data. I expertly utilize MongoDB's flexible schema and powerful aggregation framework to build fast, high-performing applications with dynamic and efficient data storage.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "MariaDB",
-        "image": "./logos/databases/mariadb.png",
+        "image": "./logos/Databases/mariadb.png",
         "snippet": "<p>Having worked extensively with MariaDB, I utilize its high-performance capabilities to build highly available, secure, and scalable databases. I focus on optimizing queries, ensuring proper indexing, and configuring replication to support critical, large-scale applications while maintaining data consistency and performance.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "Cassandra",
-        "image": "./logos/databases/cassandra.png",
+        "image": "./logos/Databases/cassandra.png",
         "snippet": "<p>My proficiency in Cassandra enables me to design highly scalable, fault-tolerant distributed databases for handling massive datasets across multiple nodes. I implement effective data models and ensure optimal configuration for performance, durability, and availability, making Cassandra an ideal solution for big data applications.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "Redis",
-        "image": "./logos/databases/redis.png",
+        "image": "./logos/Databases/redis.png",
         "snippet": "<p>I utilize Redis as a powerful database solution, taking full advantage of its in-memory capabilities to deliver lightning-fast data access. With expertise in setting up Redis for both persistence and transient data storage, I ensure seamless performance for real-time applications that require low-latency and high-throughput data operations.</p>",
         "url": null,
         "images": []
       },
       {
         "item": "Firebase",
-        "image": "./logos/databases/firebase.png",
+        "image": "./logos/Databases/firebase.png",
         "snippet": "<p>With expertise in Firebase, I integrate real-time databases, authentication, and cloud functions to build dynamic, scalable applications. I leverage Firebase's seamless sync capabilities and powerful backend services to create responsive mobile and web applications that scale effortlessly and deliver an exceptional user experience.</p>",
         "url": null,
         "images": []
