@@ -33,7 +33,8 @@ jobs:
 
     - name: Build project
       # if: success()  # Only run build if tests pass
-      run: npm run build
+      # run: npm run build
+      run: ng build
 
     - name: Commit and push dist folder
       run: |
