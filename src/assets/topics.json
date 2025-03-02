@@ -30,6 +30,13 @@
         "images": []
       },
       {
+        "item": "Next.js",
+        "image": "./logos/Frontend/next.png",
+        "snippet": "<p>Next.js has been instrumental in building fast, scalable, and SEO-friendly web applications. Leveraging its hybrid static and server-side rendering capabilities, I have optimized performance and enhanced user experiences. My expertise includes dynamic routing, API routes, middleware, and seamless integration with various backend services. With Next.js, I develop maintainable and high-performing applications that meet modern web standards.</p><b>Notable Next.js Projects: </b>",
+        "url": "https://izam-next-js-project.vercel.app/",
+        "images": []
+      },
+      {
         "item": "Nuxt",
         "image": "./logos/Frontend/nuxt.png",
         "snippet": "<p>Nuxt.js empowers me to build performant and SEO-friendly web applications tailored to modern user and business requirements. I've worked on projects ranging from server-side rendered (SSR) solutions to static site generation (SSG), ensuring optimal performance and scalability. By leveraging Nuxt's modular design and comprehensive features, I deliver robust and efficient front-end architectures.</p><b>Notable Nuxt.js Projects: </b>",
