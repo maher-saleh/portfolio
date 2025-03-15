@@ -20,7 +20,7 @@ type topic_item = {
   standalone: true,
   imports: [],
   templateUrl: './topics.component.html',
-  styleUrl: './topics.component.scss'
+  styleUrl: './topics.component.scss',
 })
 export class TopicsComponent implements OnChanges{
 
