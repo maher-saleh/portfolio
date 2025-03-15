@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 import { trigger, state, style, transition, animate, group } from '@angular/animations';
 
 type topic = {
@@ -23,13 +23,11 @@ type topic_item = {
   styleUrl: './topics.component.scss'
 })
 export class TopicsComponent implements OnChanges{
-  @Input() component!: { url: string };  
-  safeUrl: SafeResourceUrl = '' as unknown as SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) {}
 
-  sanitizeUrl(url: string): SafeResourceUrl {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(url) as SafeResourceUrl;
+   getSanitizedUrl(url: string) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
   
@@ -42,15 +40,6 @@ export class TopicsComponent implements OnChanges{
   selected_topic_components: topic_item[] = [];
 
   ngOnChanges(changes: SimpleChanges): void {
-    
-    if (changes['component'] && this.component?.url) {
-    const url = this.component.url.trim();
-    if (url && url.startsWith("https://")) {  // ✅ Ensure it's a valid HTTPS URL
-      this.safeUrl = this.sanitizeUrl(url);
-    } else {
-      console.warn("Blocked unsafe URL:", url);
-    }
-  }
     // Reset active card (if any)
     this.is_active = false;
     this.selected_card = '';
