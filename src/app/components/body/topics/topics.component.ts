@@ -24,8 +24,7 @@ type topic_item = {
 })
 export class TopicsComponent implements OnChanges{
   @Input() component!: { url: string };  
-  // safeUrl: SafeResourceUrl = '' as unknown as SafeResourceUrl;
-  safeUrl: SafeResourceUrl | null = null;
+  safeUrl: SafeResourceUrl = '' as unknown as SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) {}
 
@@ -46,17 +45,10 @@ export class TopicsComponent implements OnChanges{
     
     if (changes['component'] && this.component?.url) {
     const url = this.component.url.trim();
-    // if (url && url.startsWith("https://")) {  // ✅ Ensure it's a valid HTTPS URL
-    //   this.safeUrl = this.sanitizeUrl(url);
-    // } else {
-    //   console.warn("Blocked unsafe URL:", url);
-    // }
-
-    if (url && url.startsWith("https://")) {  
-      this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    if (url && url.startsWith("https://")) {  // ✅ Ensure it's a valid HTTPS URL
+      this.safeUrl = this.sanitizeUrl(url);
     } else {
       console.warn("Blocked unsafe URL:", url);
-      this.safeUrl = null;  // Set to null if unsafe
     }
   }
     // Reset active card (if any)
