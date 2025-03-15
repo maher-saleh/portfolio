@@ -9,7 +9,7 @@
                         <p class="snippet_container" [innerHTML]="component.snippet"></p>
                     }
                     @if ( component.url ){
-                        <iframe loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms" title="topic.item" [src]="getSanitizedUrl(component.url)" frameborder="0"></iframe>
+                        <iframe title="topic.item" [src]="safeUrl" frameborder="0"></iframe>
                     }
                     @if ( component.images.length ){
                         <img class="image" title="topic.item" [src]="component.images[0]" />
