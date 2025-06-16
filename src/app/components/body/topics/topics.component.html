@@ -1,17 +1,18 @@
 <div class="body">
     <div class="container">
         @for (component of selected_topic_components; track $index) {
-            <div class="card" [class]="{'hideCard':is_active && component.item != selected_card}" (click)="on_click($event, component)" (mousemove)="on_mousemove($event)" (mouseleave)="resetPosition($event)">
+            <div class="card" [class]="{'hideCard':is_active && component.item != selected_card}" (click)="on_click($event, component)" (mouseleave)="resetPosition($event)">
                 <img class="logo" src="{{ component.image }}" alt="{{ component.item }}">
                 <p class="topic_item">{{ component.item }}</p>
                 @if ( component.item === selected_card && is_active){
                     @if ( component.snippet ){
-                        <p class="snippet_container" [innerHTML]="component.snippet + (component.url ? '<a href=' + component.url + ' target=\'_blank\'>' + component.url + '</a>' : '')"></p>
+                        <p class="snippet_container" [innerHTML]="component.snippet"></p>
+                        <!-- <p class="snippet_container" [innerHTML]="component.snippet + (component.url ? '<a href=' + component.url + ' target=\'_blank\'>' + component.url + '</a>' : '')"></p> -->
                     }
-                    @if ( component.images.length ){
-                        <img class="image" title="topic.item" [src]="component.images[0]" />
-                    } @else if ( component.url ){
+                    @if ( component.url ){
                         <iframe loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms" title="topic.item" [src]="getSanitizedUrl(component.url)" frameborder="0"></iframe>
+                    } @else if ( component.images.length ){
+                        <img class="image" title="topic.item" [src]="component.images[0]" />
                     }
                 }
             </div>

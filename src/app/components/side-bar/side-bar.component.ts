@@ -40,6 +40,8 @@ export class SideBarComponent {
     }
 
     setTimeout(() => {
+
+      console.log('clicked');
       // Get links
       const links = document.querySelectorAll(".side-panel li");
 

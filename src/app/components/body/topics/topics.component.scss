@@ -51,6 +51,7 @@ div.container {
             opacity: 1;
             background-color: #fff;
             box-shadow: 0px 3px 10px #a8a8a8;
+            // transform: rotateY(10deg) rotateX(10deg) translateX(5px) translateY(5px);
         }
 
         &.active {
@@ -69,8 +70,8 @@ div.container {
             font-weight: bold;
         }
 
-        p.snippet_container a {
-            
+        p.snippet_container {
+            text-align: justify ;
         }
 
         img.logo {
@@ -95,7 +96,6 @@ div.container {
             zoom: 100%;
             border: 1px solid #dddddd;
             border-radius: 8px;
-            margin-top: 20px;
         }
         
         img.image {
