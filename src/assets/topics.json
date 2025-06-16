@@ -30,11 +30,13 @@
         "images": ["./images/nuxt-js.jpg"]
       },
       {
-        "item": "Webpack",
-        "image": "./logos/Frontend/webpack.png",
-        "snippet": "<p>I have a deep understanding of Webpack and its role in optimizing modern web applications. From configuring basic setups to implementing advanced features like code splitting, lazy loading, and tree shaking, I've leveraged Webpack to significantly enhance build performance and reduce load times. My experience includes optimizing assets, integrating plugins, and fine-tuning production builds to ensure a seamless development and deployment workflow.</p><p>In one of my key projects, I utilized Webpack to optimize a complex, multi-page application, significantly enhancing both its performance and scalability. This optimization involved implementing advanced techniques such as code splitting, lazy loading, and efficient asset management, leading to faster load times and a more scalable architecture.</p>",
-        "url": null,
-        "images": []
+        "item": "Vue",
+        "image": "./logos/Frontend/vue.png",
+        "snippet": "<p>I specialize in leveraging Vue.js to craft scalable, maintainable, and highly interactive web applications. From lightweight, fast-loading interfaces to architecting modular, large-scale front-end systems, my focus remains on delivering seamless user experiences. By utilizing Vue's flexibility and robust ecosystem, I ensure efficient, maintainable, and future-ready solutions.</p><b>Notable Vue.js Projects: </b>",
+        "url": "",
+        "images": [
+          "./images/sunsolar.jpg"
+        ]
       },
       {
         "item": "Angular",
@@ -44,13 +46,11 @@
         "images": []
       },
       {
-        "item": "Vue",
-        "image": "./logos/Frontend/vue.png",
-        "snippet": "<p>I specialize in leveraging Vue.js to craft scalable, maintainable, and highly interactive web applications. From lightweight, fast-loading interfaces to architecting modular, large-scale front-end systems, my focus remains on delivering seamless user experiences. By utilizing Vue's flexibility and robust ecosystem, I ensure efficient, maintainable, and future-ready solutions.</p><b>Notable Vue.js Projects: </b>",
-        "url": "",
-        "images": [
-          "./images/sunsolar.jpg"
-        ]
+        "item": "Webpack",
+        "image": "./logos/Frontend/webpack.png",
+        "snippet": "<p>I have a deep understanding of Webpack and its role in optimizing modern web applications. From configuring basic setups to implementing advanced features like code splitting, lazy loading, and tree shaking, I've leveraged Webpack to significantly enhance build performance and reduce load times. My experience includes optimizing assets, integrating plugins, and fine-tuning production builds to ensure a seamless development and deployment workflow.</p><p>In one of my key projects, I utilized Webpack to optimize a complex, multi-page application, significantly enhancing both its performance and scalability. This optimization involved implementing advanced techniques such as code splitting, lazy loading, and efficient asset management, leading to faster load times and a more scalable architecture.</p>",
+        "url": null,
+        "images": []
       }
     ]
   },
