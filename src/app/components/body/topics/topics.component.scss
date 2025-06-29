@@ -113,6 +113,32 @@ div.container {
             margin-top: 20px;
             object-fit: contain;
         }
+
+        label {
+            align-self: flex-start;
+            font-weight: bold;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        
+        label:first-of-type {
+            background-color: #e5b37d;
+        }
+        label:last-of-type {
+            background-color: #7de58b;
+        }
+    }
+}
+
+div.container {
+    div.card:has(.iframeII) {
+        iframe:first-of-type {
+            height: 81px; // calc(100vw * 0.1);
+        }
+        iframe:last-of-type {
+            height: 232px;
+        }
     }
 }
 
