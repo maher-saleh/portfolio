@@ -180,8 +180,8 @@
         "image": "./logos/DevOps/rabbitmq.png",
         "snippet": "<p>I have a deep understanding of RabbitMQ for building highly scalable and reliable message queuing systems. By implementing RabbitMQ's advanced routing, clustering, and failover strategies, I ensure that real-time messaging and event-driven architecture solutions are both robust and performant.</p><b>See How I Use RabbitMQ to Power Two Distinct Services:</b>",
         "url": [
-          "http://16.171.10.81/producer/",
-          "http://16.171.10.81/consumer/"
+          "https://maherawsrabbitmq.zapto.org/producer/",
+          "https://maherawsrabbitmq.zapto.org/consumer/"
         ],
         "images": []
       },
