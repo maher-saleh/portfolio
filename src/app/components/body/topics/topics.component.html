@@ -1,28 +1,50 @@
 <div class="body">
     <div class="container">
         @for (component of selected_topic_components; track $index) {
-            <div class="card" [class]="{'hideCard':is_active && component.item != selected_card}" (click)="on_click($event, component)" (mouseleave)="resetPosition($event)">
-                <img class="logo" src="{{ component.image }}" alt="{{ component.item }}">
-                <p class="topic_item">{{ component.item }}</p>
-                @if ( component.item === selected_card && is_active){
-                    @if ( component.snippet ){
-                        <p class="snippet_container" [innerHTML]="component.snippet"></p>
-                        <!-- <p class="snippet_container" [innerHTML]="component.snippet + (component.url ? '<a href=' + component.url + ' target=\'_blank\'>' + component.url + '</a>' : '')"></p> -->
-                    }
-                    @if ( component.url.length ){
-                        @if ( component.url.length > 1 ) {
-                            <label class="iframe-label">Producer Website/Service</label>
-                            <iframe class="iframeI" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms" title="topic.item" [src]="getSanitizedUrl(component.url[0])" frameborder="0"></iframe>
-                            <label class="iframe-label">Consumer Website/Service</label>
-                            <iframe class="iframeII" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms" title="topic.item" [src]="getSanitizedUrl(component.url[1])" frameborder="0"></iframe>
-                        } @else {
-                            <iframe class="iframeI" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms" title="topic.item" [src]="getSanitizedUrl(component.url[0])" frameborder="0"></iframe>
-                        }
-                    } @else if ( component.images.length ){
-                        <img class="image" title="topic.item" [src]="component.images[0]" />
-                    }
-                }
+        <div class="card" [class]="{'hideCard':is_active && component.item != selected_card}"
+            (click)="on_click($event, component)" (mouseleave)="resetPosition($event)">
+            <img class="logo" src="{{ component.image }}" alt="{{ component.item }}">
+            <p class="topic_item">{{ component.item }}</p>
+            @if ( component.item === selected_card && is_active){
+            @if ( component.snippet ){
+            <p class="snippet_container" [innerHTML]="component.snippet"></p>
+            <!-- <p class="snippet_container" [innerHTML]="component.snippet + (component.url ? '<a href=' + component.url + ' target=\'_blank\'>' + component.url + '</a>' : '')"></p> -->
+            }
+            @if ( component.url.length ){
+            @if ( component.url.length > 1 ) {
+            @if ( component.item === 'RabbitMQ') {
+            <div class="iframes-container">
+                <label class="iframe-label">Producer Website/Service</label>
+                <iframe class="iframeI" loading="lazy"
+                    sandbox="allow-scripts allow-same-origin allow-popups allow-forms" title="topic.item"
+                    [src]="getSanitizedUrl(component.url[0])" frameborder="0"></iframe>
+
+                <label class="iframe-label">Consumer Website/Service</label>
+                <iframe class="iframeII" loading="lazy"
+                    sandbox="allow-scripts allow-same-origin allow-popups allow-forms" title="topic.item"
+                    [src]="getSanitizedUrl(component.url[1])" frameborder="0"></iframe>
             </div>
+            } @else {
+            <iframe class="iframeI" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                title="topic.item" [src]="getSanitizedUrl(component.url[0])" frameborder="0"></iframe>
+            <iframe class="iframeII" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                title="topic.item" [src]="getSanitizedUrl(component.url[1])" frameborder="0"></iframe>
+            }
+            @if ( component.images.length ){
+            <img class="image" title="topic.item" [src]="component.images[0]" />
+            }
+            } @else {
+            <iframe class="iframeI" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                title="topic.item" [src]="getSanitizedUrl(component.url[0])" frameborder="0"></iframe>
+            }
+            @if ( component.images.length ){
+            <img class="image" title="topic.item" [src]="component.images[0]" />
+            }
+            } @else if ( component.images.length ){
+            <img class="image" title="topic.item" [src]="component.images[0]" />
+            }
+            }
+        </div>
         }
     </div>
 </div>

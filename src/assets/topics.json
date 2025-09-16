@@ -12,22 +12,29 @@
         "item": "React",
         "image": "./logos/Frontend/react.png",
         "snippet": "<p>React has been a key tool in my development workflow, enabling the creation of feature-rich, dynamic web applications with an emphasis on performance and user satisfaction. My expertise includes crafting reusable components, managing complex application states, and optimizing scalability for high-demand environments. React's declarative approach and robust ecosystem allow me to deliver intuitive and reliable front-end solutions.</p><b>Notable React Projects: </b>",
-        "url": ["https://react-tech-blog.pages.dev"],
-        "images": ["./images/react-blog.jpg"]
+        "url": [
+          "https://react-tech-blog.pages.dev",
+          "https://applicant-tracking-system-three.vercel.app/dashboard"
+        ],
+        "images": []
       },
       {
         "item": "Next.js",
         "image": "./logos/Frontend/next.png",
         "snippet": "<p>Next.js has been instrumental in building fast, scalable, and SEO-friendly web applications. Leveraging its hybrid static and server-side rendering capabilities, I have optimized performance and enhanced user experiences. My expertise includes dynamic routing, API routes, middleware, and seamless integration with various backend services. With Next.js, I develop maintainable and high-performing applications that meet modern web standards.</p><b>Notable Next.js Projects: </b>",
-        "url": ["https://izam-next-js-project.vercel.app"],
-        "images": ["./images/izam-next-js.jpg"]
+        "url": [
+          "https://izam-next-js-project.vercel.app"
+        ],
+        "images": []
       },
       {
         "item": "Nuxt",
         "image": "./logos/Frontend/nuxt.png",
         "snippet": "<p>Nuxt.js empowers me to build performant and SEO-friendly web applications tailored to modern user and business requirements. I've worked on projects ranging from server-side rendered (SSR) solutions to static site generation (SSG), ensuring optimal performance and scalability. By leveraging Nuxt's modular design and comprehensive features, I deliver robust and efficient front-end architectures.</p><b>Notable Nuxt.js Projects: </b>",
-        "url": ["https://vue-nuxt3.pages.dev"],
-        "images": ["./images/nuxt-js.jpg"]
+        "url": [
+          "https://vue-nuxt3.pages.dev"
+        ],
+        "images": []
       },
       {
         "item": "Vue",
@@ -59,6 +66,26 @@
     "name": "Backend",
     "components": [
       {
+        "item": "PHP",
+        "image": "./logos/Backend/php.png",
+        "snippet": "<p>I have extensive experience with PHP, using it to build secure, high-performance back-end systems and APIs. From legacy code optimization to modern frameworks, I apply best practices in coding, testing, and scalability to deliver reliable solutions.</p>",
+        "url": [
+          "https://vue-nuxt3.pages.dev"
+        ],
+        "images": []
+      },
+      {
+        "item": "Laravel",
+        "image": "./logos/Backend/laravel.png",
+        "snippet": "<p>With strong expertise in Laravel, I design and implement clean, maintainable, and scalable web applications. Leveraging Laravel’s rich ecosystem, I deliver features rapidly while ensuring robust architecture, optimized queries, and seamless integration with third-party services.</p>",
+        "url": [
+          "https://applicant-tracking-system-three.vercel.app/dashboard"
+        ],
+        "images": [
+          "./images/sunsolar.jpg"
+        ]
+      },
+      {
         "item": "Python",
         "image": "./logos/Backend/python.png",
         "snippet": "<p>I bring deep expertise in Python, leveraging its versatility to build everything from robust back-end systems to data-driven applications. With experience in frameworks like Django and Flask, I craft scalable, secure, and efficient solutions tailored to diverse project needs.</p>",
@@ -84,6 +111,15 @@
         "image": "./logos/Backend/java.png",
         "snippet": "<p>My proficiency in Java spans across building reliable enterprise-level applications, scalable web services, and secure back-end systems. With expertise in frameworks like Spring and Hibernate, I deliver high-performance software that meets complex business requirements.</p>",
         "url": [],
+        "images": []
+      },
+      {
+        "item": "Spring Boot",
+        "image": "./logos/Backend/spring-boot.png",
+        "snippet": "<p>I specialize in Spring Boot for building enterprise-grade applications with a focus on performance, scalability, and security. By leveraging Spring’s ecosystem, I deliver robust RESTful APIs, microservices architectures, and seamless integrations with databases and cloud platforms.</p>",
+        "url": [
+          "https://izam-next-js-project.vercel.app"
+        ],
         "images": []
       },
       {

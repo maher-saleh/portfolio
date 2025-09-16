@@ -132,11 +132,14 @@ div.container {
 }
 
 div.container {
-    div.card:has(.iframeII) {
-        iframe:first-of-type {
-            height: 81px; // calc(100vw * 0.1);
+    div.card:has(.iframes-container iframe.iframeII) {
+        .iframes-container {
+            text-align: left;
         }
-        iframe:last-of-type {
+        iframe.iframeI {
+            height: 232px; // 81px; // calc(100vw * 0.1);
+        }
+        iframe.iframeII {
             height: 232px;
         }
     }
