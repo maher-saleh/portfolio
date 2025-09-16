@@ -135,6 +135,7 @@ div.container {
     div.card:has(.iframes-container iframe.iframeII) {
         .iframes-container {
             text-align: left;
+            width: 100%;
         }
         iframe.iframeI {
             height: 232px; // 81px; // calc(100vw * 0.1);
