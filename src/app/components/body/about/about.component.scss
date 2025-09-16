@@ -20,7 +20,7 @@ div.container {
 }
 
 div.body * {
-    font-family: 'ArialBLK';
+    font-family: Arial, Helvetica, sans-serif; // 'ArialBLK';
     font-size: 24px;
 }
 
@@ -28,14 +28,33 @@ div.body span {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+div.body div#emails {
+    flex-direction: row;
+
+    span {
+        line-height: 1.5;
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
 div.body a {
     margin-left: 10px;
     line-height: 1.5;
     font-weight: bold;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 div.body div:not(.container) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 div.body div {
@@ -60,5 +79,9 @@ div.body div {
 
     div.body * {
         font-size: 14px;
+    }
+
+    div.body div:not(.container) {
+        margin-bottom: 30px;
     }
 }
