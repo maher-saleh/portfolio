@@ -103,10 +103,10 @@ div.container {
             position: relative;
             top: 0;
             left: 0;
-            width: max-content;
+            width: 100%;
             max-width: 100%;
-            height: calc(100vw * 0.5);
-            max-height: max-content !important;
+            height: auto;
+            max-height: unset;
             zoom: 75%;
             border: 1px solid #dddddd;
             border-radius: 8px;
