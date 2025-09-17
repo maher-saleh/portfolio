@@ -79,7 +79,8 @@
         "image": "./logos/Backend/laravel.png",
         "snippet": "<p>With strong expertise in Laravel, I design and implement clean, maintainable, and scalable web applications. Leveraging Laravel’s rich ecosystem, I deliver features rapidly while ensuring robust architecture, optimized queries, and seamless integration with third-party services.</p>",
         "url": [
-          "https://applicant-tracking-system-three.vercel.app/dashboard"
+          "https://applicant-tracking-system-three.vercel.app/dashboard",
+          "https://react-tech-blog.pages.dev"
         ],
         "images": [
           "./images/sunsolar.jpg"
