@@ -56,6 +56,8 @@ div.container {
 
         &.active {
             width: calc(100vw - 280px);
+            order: -1;
+            scroll-behavior: smooth;
             // animation: showCardDetails .5s 1 both;
         }
 

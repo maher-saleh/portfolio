@@ -16,7 +16,7 @@ import { AboutComponent } from "./components/body/about/about.component";
     TopicsComponent,
     HomeComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

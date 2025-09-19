@@ -11,8 +11,9 @@ type topic_item = {
   item: string;
   image: string;
   snippet: string;
-  url: string;
+  url: string[];  // Corrected to string[] based on usage
   images: string[];
+  sanitizedUrls?: any[];  // Add this for cached SafeResourceUrls
 }
 
 @Component({
@@ -26,7 +27,7 @@ export class TopicsComponent implements OnChanges{
 
   constructor(private sanitizer: DomSanitizer) {}
 
-   getSanitizedUrl(url: string) {
+  getSanitizedUrl(url: string) {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
@@ -51,9 +52,17 @@ export class TopicsComponent implements OnChanges{
     });
 
     // Change selected topic contents
+    // if(this.selected_topic && this.selected_topic !== 'Home' && this.selected_topic !== 'About Me'){
+    //   this.selected_topic_content = this.topics.find(item => item.name == this.selected_topic);
+    //   this.selected_topic_components = this.selected_topic_content.components;
+    // }
+
     if(this.selected_topic && this.selected_topic !== 'Home' && this.selected_topic !== 'About Me'){
       this.selected_topic_content = this.topics.find(item => item.name == this.selected_topic);
-      this.selected_topic_components = this.selected_topic_content.components;
+      this.selected_topic_components = this.selected_topic_content.components.map((component: topic_item) => ({
+        ...component,
+        sanitizedUrls: component.url.map((url: string) => this.sanitizer.bypassSecurityTrustResourceUrl(url))
+      }));
     }
   }
 
