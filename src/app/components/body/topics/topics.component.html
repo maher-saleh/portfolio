@@ -39,6 +39,8 @@
             <iframe class="iframeI" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
                 title="topic.item" [src]="component.sanitizedUrls?.[0]" frameborder="0"></iframe>
             }
+            }@else if ( component.images.length ){
+            <img class="image" title="topic.item" [src]="component.images[0]" />
             }
             }
         </div>

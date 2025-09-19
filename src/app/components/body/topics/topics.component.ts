@@ -84,6 +84,31 @@ export class TopicsComponent implements OnChanges{
       this.selected_card = p.innerText;
       card.classList.add('active');
     }
+
+    // window.scrollTo({
+    //   top: 0,
+    //   behavior: 'smooth'
+    // });
+
+    this.scrollToTop(800);
+  }
+
+  scrollToTop(duration: number = 500) {
+    const start = window.scrollY;
+    const startTime = performance.now();
+
+    function animate(time: DOMHighResTimeStamp) {
+      const elapsed = time - startTime;
+      const progress = Math.min(elapsed / duration, 1); // 0 → 1
+      // const ease = 1 - Math.pow(1 - progress, 3); // cubic ease-out
+      const ease = progress < 0.5 ? 2 * progress * progress : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+      window.scrollTo(0, start * (1 - ease));
+
+      if (progress < 1) requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
   }
 
   on_mousemove(event: MouseEvent): void{
