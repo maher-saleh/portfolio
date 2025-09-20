@@ -54,7 +54,7 @@ body {
     flex-direction: column;
     align-content: space-between;
     position: relative;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     text-align: right;
     height: calc(100% - 50px);
 }
