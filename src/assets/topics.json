@@ -53,6 +53,15 @@
         "images": []
       },
       {
+        "item": "Django",
+        "image": "./logos/Backend/django.png",
+        "snippet": "<p>I specialize in Django, building robust and scalable web applications with clean and efficient code. Leveraging Django's modular architecture and powerful ORM, I create secure back-end systems, dynamic APIs, and seamless integrations that drive business growth.</p>",
+        "url": [
+          "https://maherawsrabbitmq.zapto.org"
+        ],
+        "images": []
+      },
+      {
         "item": "Webpack",
         "image": "./logos/Frontend/webpack.png",
         "snippet": "<p>I have a deep understanding of Webpack and its role in optimizing modern web applications. From configuring basic setups to implementing advanced features like code splitting, lazy loading, and tree shaking, I've leveraged Webpack to significantly enhance build performance and reduce load times. My experience includes optimizing assets, integrating plugins, and fine-tuning production builds to ensure a seamless development and deployment workflow.</p><p>In one of my key projects, I utilized Webpack to optimize a complex, multi-page application, significantly enhancing both its performance and scalability. This optimization involved implementing advanced techniques such as code splitting, lazy loading, and efficient asset management, leading to faster load times and a more scalable architecture.</p>",
@@ -134,7 +143,9 @@
         "item": "Django",
         "image": "./logos/Backend/django.png",
         "snippet": "<p>I specialize in Django, building robust and scalable web applications with clean and efficient code. Leveraging Django's modular architecture and powerful ORM, I create secure back-end systems, dynamic APIs, and seamless integrations that drive business growth.</p>",
-        "url": [],
+        "url": [
+          "https://maherawsrabbitmq.zapto.org"
+        ],
         "images": []
       },
       {
