@@ -67,6 +67,15 @@
         "snippet": "<p>I have a deep understanding of Webpack and its role in optimizing modern web applications. From configuring basic setups to implementing advanced features like code splitting, lazy loading, and tree shaking, I've leveraged Webpack to significantly enhance build performance and reduce load times. My experience includes optimizing assets, integrating plugins, and fine-tuning production builds to ensure a seamless development and deployment workflow.</p><p>In one of my key projects, I utilized Webpack to optimize a complex, multi-page application, significantly enhancing both its performance and scalability. This optimization involved implementing advanced techniques such as code splitting, lazy loading, and efficient asset management, leading to faster load times and a more scalable architecture.</p>",
         "url": [],
         "images": []
+      },
+      {
+        "item": "CSS Effects",
+        "image": "./logos/Frontend/css.svg",
+        "snippet": "<p>I leverage modern CSS to craft visually appealing, responsive, and accessible user interfaces. My expertise spans from building clean layouts with Flexbox and Grid, to enhancing interactivity through smooth transitions, animations, and hover effects. I focus on creating elegant micro-interactions that improve usability while maintaining performance and cross-browser compatibility. With CSS, I aim to deliver polished and engaging front-end experiences that complement the functionality of my applications.</p><b>Live CSS Showcase: </b>",
+        "url": [
+          "https://maher-saleh.github.io/css-styles-animations"
+        ],
+        "images": []
       }
     ]
   },
