@@ -102,9 +102,7 @@
           "https://applicant-tracking-system-three.vercel.app/dashboard",
           "https://react-tech-blog.pages.dev"
         ],
-        "images": [
-          "./images/sunsolar.jpg"
-        ]
+        "images": []
       },
       {
         "item": "Python",
