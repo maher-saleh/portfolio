@@ -28,6 +28,17 @@
         "images": []
       },
       {
+        "item": "Vue",
+        "image": "./logos/Frontend/vue.png",
+        "snippet": "<p>I specialize in leveraging Vue.js to craft scalable, maintainable, and highly interactive web applications. From lightweight, fast-loading interfaces to architecting modular, large-scale front-end systems, my focus remains on delivering seamless user experiences. By utilizing Vue's flexibility and robust ecosystem, I ensure efficient, maintainable, and future-ready solutions.</p><b>Notable Vue.js Projects: </b>",
+        "url": [
+          "https://vue-full-stack-project.onrender.com"
+        ],
+        "images": [
+          "./images/sunsolar.jpg"
+        ]
+      },
+      {
         "item": "Nuxt",
         "image": "./logos/Frontend/nuxt.png",
         "snippet": "<p>Nuxt.js empowers me to build performant and SEO-friendly web applications tailored to modern user and business requirements. I've worked on projects ranging from server-side rendered (SSR) solutions to static site generation (SSG), ensuring optimal performance and scalability. By leveraging Nuxt's modular design and comprehensive features, I deliver robust and efficient front-end architectures.</p><b>Notable Nuxt.js Projects: </b>",
@@ -35,15 +46,6 @@
           "https://vue-nuxt3.pages.dev"
         ],
         "images": []
-      },
-      {
-        "item": "Vue",
-        "image": "./logos/Frontend/vue.png",
-        "snippet": "<p>I specialize in leveraging Vue.js to craft scalable, maintainable, and highly interactive web applications. From lightweight, fast-loading interfaces to architecting modular, large-scale front-end systems, my focus remains on delivering seamless user experiences. By utilizing Vue's flexibility and robust ecosystem, I ensure efficient, maintainable, and future-ready solutions.</p><b>Notable Vue.js Projects: </b>",
-        "url": [],
-        "images": [
-          "./images/sunsolar.jpg"
-        ]
       },
       {
         "item": "Angular",
@@ -115,8 +117,12 @@
         "item": "Node.js",
         "image": "./logos/Backend/node-js.png",
         "snippet": "<p>As a seasoned Node.js developer, I specialize in creating fast, scalable, and efficient server-side applications. From RESTful APIs to real-time applications, I harness Node.js's non-blocking architecture to deliver seamless and high-performing solutions.</p>",
-        "url": [],
-        "images": []
+        "url": [
+          "https://vue-full-stack-project.onrender.com"
+        ],
+        "images": [
+          "./images/sunsolar.jpg"
+        ]
       },
       {
         "item": "Ruby on Rails",
