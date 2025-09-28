@@ -32,7 +32,7 @@
         "image": "./logos/Frontend/vue.png",
         "snippet": "<p>I specialize in leveraging Vue.js to craft scalable, maintainable, and highly interactive web applications. From lightweight, fast-loading interfaces to architecting modular, large-scale front-end systems, my focus remains on delivering seamless user experiences. By utilizing Vue's flexibility and robust ecosystem, I ensure efficient, maintainable, and future-ready solutions.</p><b>Notable Vue.js Projects: </b>",
         "url": [
-          "https://vue-full-stack-project.onrender.com"
+          "https://vue-full-stack-project-zdcm.vercel.app/"
         ],
         "images": [
           "./images/sunsolar.jpg"
@@ -116,7 +116,7 @@
         "image": "./logos/Backend/node-js.png",
         "snippet": "<p>As a seasoned Node.js developer, I specialize in creating fast, scalable, and efficient server-side applications. From RESTful APIs to real-time applications, I harness Node.js's non-blocking architecture to deliver seamless and high-performing solutions.</p>",
         "url": [
-          "https://vue-full-stack-project.onrender.com"
+          "https://vue-full-stack-project-zdcm.vercel.app/"
         ],
         "images": [
           "./images/sunsolar.jpg"
