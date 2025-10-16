@@ -14,7 +14,7 @@
         "snippet": "<p>React has been a key tool in my development workflow, enabling the creation of feature-rich, dynamic web applications with an emphasis on performance and user satisfaction. My expertise includes crafting reusable components, managing complex application states, and optimizing scalability for high-demand environments. React's declarative approach and robust ecosystem allow me to deliver intuitive and reliable front-end solutions.</p><b>Notable React Projects: </b>",
         "url": [
           "https://react-tech-blog.pages.dev",
-          "https://applicant-tracking-system-three.vercel.app/dashboard"
+          "https://maher-saleh.redirectme.net/laravel-lite-notes/"
         ],
         "images": []
       },
@@ -59,7 +59,7 @@
         "image": "./logos/Backend/django.png",
         "snippet": "<p>I specialize in Django, building robust and scalable web applications with clean and efficient code. Leveraging Django's modular architecture and powerful ORM, I create secure back-end systems, dynamic APIs, and seamless integrations that drive business growth.</p>",
         "url": [
-          "https://maherawsrabbitmq.zapto.org/django"
+          "https://maher-saleh.redirectme.net/django-notes-app"
         ],
         "images": []
       },
@@ -75,7 +75,7 @@
         "image": "./logos/Frontend/css.svg",
         "snippet": "<p>I leverage modern CSS to craft visually appealing, responsive, and accessible user interfaces. My expertise spans from building clean layouts with Flexbox and Grid, to enhancing interactivity through smooth transitions, animations, and hover effects. I focus on creating elegant micro-interactions that improve usability while maintaining performance and cross-browser compatibility. With CSS, I aim to deliver polished and engaging front-end experiences that complement the functionality of my applications.</p><b>Live CSS Showcase: </b>",
         "url": [
-          "https://maher-saleh.github.io/css-styles-animations"
+          "https://maher-saleh.redirectme.net/css-effects/"
         ],
         "images": []
       }
@@ -99,7 +99,7 @@
         "image": "./logos/Backend/laravel.png",
         "snippet": "<p>With strong expertise in Laravel, I design and implement clean, maintainable, and scalable web applications. Leveraging Laravel’s rich ecosystem, I deliver features rapidly while ensuring robust architecture, optimized queries, and seamless integration with third-party services.</p>",
         "url": [
-          "https://applicant-tracking-system-three.vercel.app/dashboard",
+          "https://maher-saleh.redirectme.net/laravel-lite-notes/",
           "https://react-tech-blog.pages.dev"
         ],
         "images": []
@@ -157,7 +157,7 @@
         "image": "./logos/Backend/django.png",
         "snippet": "<p>I specialize in Django, building robust and scalable web applications with clean and efficient code. Leveraging Django's modular architecture and powerful ORM, I create secure back-end systems, dynamic APIs, and seamless integrations that drive business growth.</p>",
         "url": [
-          "https://maherawsrabbitmq.zapto.org/django"
+          "https://maher-saleh.redirectme.net/django-notes-app"
         ],
         "images": []
       },
@@ -241,8 +241,8 @@
         "image": "./logos/DevOps/rabbitmq.png",
         "snippet": "<p>I have a deep understanding of RabbitMQ for building highly scalable and reliable message queuing systems. By implementing RabbitMQ's advanced routing, clustering, and failover strategies, I ensure that real-time messaging and event-driven architecture solutions are both robust and performant.</p><b>See How I Use RabbitMQ to Power Two Distinct Services:</b>",
         "url": [
-          "https://maherawsrabbitmq.zapto.org/producer/",
-          "https://maherawsrabbitmq.zapto.org/consumer/"
+          "https://maher-saleh.redirectme.net/rabbitmq/producer/",
+          "https://maher-saleh.redirectme.net/rabbitmq/consumer/"
         ],
         "images": []
       },
